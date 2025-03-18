@@ -5,9 +5,8 @@ S02: Демонстрация работы операторов деления �
 */
 
 main() {
-    int number_1 = 10;
-    int number_2 = 3;
-
+    int number_1 = 10,number_2 = 3;
+    
     std::cout << number_1  / number_2 << std::endl;
     std::cout << number_1 % number_2 << std::endl;
     return 0
