@@ -1,9 +1,10 @@
-/* Напишите функцию squared_sum(),
-которая принимает два дробных числа
-и возвращает квадрат их суммы
+/* РќР°РїРёС€РёС‚Рµ С„СѓРЅРєС†РёСЋ squared_sum(),
+РєРѕС‚РѕСЂР°СЏ РїСЂРёРЅРёРјР°РµС‚ РґРІР° РґСЂРѕР±РЅС‹С… С‡РёСЃР»Р°
+Рё РІРѕР·РІСЂР°С‰Р°РµС‚ РєРІР°РґСЂР°С‚ РёС… СЃСѓРјРјС‹
 */
+#include <io
 #include <iostream>
-#include <cmath> // Для функции pow()
+#include <cmath> 
 using namespace std;
 
 double squared_sum(double number_1, double number_2){
@@ -12,7 +13,7 @@ double squared_sum(double number_1, double number_2){
 int main(){
     setlocale(0,"Russian");
     double result = squared_sum(12, 12);
-    cout << "Квадрат суммы: " << result << endl; // Вывод результата
+    cout << "ГЉГўГ Г¤Г°Г ГІ Г±ГіГ¬Г¬Г»: " << result << endl;
 
 
     return 0;
