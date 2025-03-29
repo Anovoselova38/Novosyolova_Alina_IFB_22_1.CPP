@@ -4,9 +4,9 @@ using namespace std;
 Sort(int numbers[], int size_numbers) {
     for (int i = 0; i < size_numbers - 1; ++i) {
         for (int j = 0; j < size_numbers - i - 1; ++j) {
-            if (numbers[j] < numbers[j + 1]) { // ïî óáûâàíèèş
-                // Ìåíÿåì ıëåìåíòû ìåñòàìè
-                int temporary = numbers[j];  //äëÿ  ñîõğàíåíèÿ ıëåìåíòà ïğè çàìåíå ïîëîæåíèÿ
+            if (numbers[j] < numbers[j + 1]) { // // Ğ¿Ğ¾ ÑƒĞ±Ñ‹Ğ²Ğ°Ğ½Ğ¸Ğ¸Ñ
+                 // ĞœĞµĞ½ÑĞµĞ¼ ÑĞ»ĞµĞ¼ĞµĞ½Ñ‚Ñ‹ Ğ¼ĞµÑÑ‚Ğ°Ğ¼Ğ¸
+                int temporary = numbers[j];  //Ğ´Ğ»Ñ  ÑĞ¾Ñ…Ñ€Ğ°Ğ½ĞµĞ½Ğ¸Ñ ÑĞ»ĞµĞ¼ĞµĞ½Ñ‚Ğ° Ğ¿Ñ€Ğ¸ Ğ·Ğ°Ğ¼ĞµĞ½Ğµ Ğ¿Ğ¾Ğ»Ğ¾Ğ¶ĞµĞ½Ğ¸Ñ
                 numbers[j] = numbers[j + 1];
                 numbers[j + 1] = temporary;
             }
@@ -21,7 +21,7 @@ int main() {
 
     Sort(numbers, size_numbers);
 
-    cout << "Ïîñëå ñîğòèğîâêè: ";
+    cout << "ĞŸĞ¾ÑĞ»Ğµ ÑĞ¾Ñ€Ñ‚Ğ¸Ñ€Ğ¾Ğ²ĞºĞ¸: ";
     for (int i = 0; i < size_numbers; ++i) {
         cout << numbers[i] << " ";
     }
