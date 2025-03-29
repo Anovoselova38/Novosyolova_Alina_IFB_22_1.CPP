@@ -12,7 +12,9 @@ string reverse(string user_string) {
 
 int main() {
     setlocale(0,"Russian");
-    string user_string = "Hello";
+    string user_string = "";
+    cin >> user_string; // принимаем строку
+    
     cout << "Исходная строка: " << user_string << endl;
     string reversed_string = reverse(user_string); //Переворачиваем строку
     cout << "Перевёрнутая строка: " << reversed_string << endl;
