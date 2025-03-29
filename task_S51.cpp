@@ -15,14 +15,14 @@ int main() {
     string user_string = "Hello";
 
 
-    cout << "Èñõîäíàÿ ñòðîêà: ";
+    cout << "Ð˜ÑÑ…Ð¾Ð´Ð½Ð°Ñ ÑÑ‚Ñ€Ð¾ÐºÐ°: ";
     for (int i = 0; i < user_string.length(); ++i) {
         cout << user_string[i];
     }
 
     cout << endl;
     string reversed_str = reverse(user_string);
-    cout << "Ïåðåâ¸ðíóòàÿ ñòðîêà: " << reversed_str << endl;
+    cout << "ÐŸÐµÑ€ÐµÐ²Ñ‘Ñ€Ð½ÑƒÑ‚Ð°Ñ ÑÑ‚Ñ€Ð¾ÐºÐ°: " << reversed_str << endl;
 
     return 0;
 }
