@@ -7,7 +7,7 @@ public:
     int Number;
     float Balance;
 
-    //Конструктор класса
+    //РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєР»Р°СЃСЃР°
     CreditCard(int num, float bal) : Number(num), Balance(bal) {}
 
     double put(float money_amount);
@@ -23,7 +23,7 @@ double CreditCard::take(float money_amount) {
             Balance -= money_amount;
     }
     else{
-            cout << "Недостаточно средств" << endl;
+            cout << "РќРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ СЃСЂРµРґСЃС‚РІ" << endl;
 
     }
 
@@ -33,15 +33,15 @@ double CreditCard::take(float money_amount) {
 
 int main(){
     setlocale(0,"Russian");
-    //Создание объекта
+    //РЎРѕР·РґР°РЅРёРµ РѕР±СЉРµРєС‚Р°
     CreditCard firstCC(1234, 50);
     CreditCard* first_credit_card = &firstCC;
 
     first_credit_card ->put(5000);
-    cout << "Баланс после пополнения: " << first_credit_card->Balance << endl;
+    cout << "Р‘Р°Р»Р°РЅСЃ РїРѕСЃР»Рµ РїРѕРїРѕР»РЅРµРЅРёСЏ: " << first_credit_card->Balance << endl;
 
     first_credit_card ->take(3000);
-    cout << "Баланс после cнятия: " << first_credit_card->Balance << endl;
+    cout << "Р‘Р°Р»Р°РЅСЃ РїРѕСЃР»Рµ cРЅСЏС‚РёСЏ: " << first_credit_card->Balance << endl;
 
 
     return 0;
