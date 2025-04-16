@@ -6,13 +6,13 @@ using namespace std;
 double get_angle(double a, double b, double c) {
 
 
-    // Закон косинусов: cos(A) = (b^2 + c^2 - a^2) / (2bc)
+    // Р—Р°РєРѕРЅ РєРѕСЃРёРЅСѓСЃРѕРІ: cos(A) = (b^2 + c^2 - a^2) / (2bc)
     double cosA = (b*b + c*c - a*a) / (2 * b * c);
 
-    // Получение угла в радианах
+    // РџРѕР»СѓС‡РµРЅРёРµ СѓРіР»Р° РІ СЂР°РґРёР°РЅР°С…
     double angle_radian = acos(cosA);
 
-    // Перевод в градусы
+    // РџРµСЂРµРІРѕРґ РІ РіСЂР°РґСѓСЃС‹
     double angle_degree = angle_radian * 180.0 / M_PI;
 
     return angle_degree;
@@ -21,16 +21,16 @@ double get_angle(double a, double b, double c) {
 int main() {
     setlocale(0,"Russian");
     double a, b, c;
-    cout << "Введите три стороны треугольника: ";
+    cout << "Р’РІРµРґРёС‚Рµ С‚СЂРё СЃС‚РѕСЂРѕРЅС‹ С‚СЂРµСѓРіРѕР»СЊРЅРёРєР°: ";
     cin >> a >> b >> c;
 
     if (a >= b + c || b >= a + c || c >= a + b) {
-        cout << "Треугольник с такими сторонами не существует." << endl;
+        cout << "РўСЂРµСѓРіРѕР»СЊРЅРёРє СЃ С‚Р°РєРёРјРё СЃС‚РѕСЂРѕРЅР°РјРё РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚." << endl;
         return 0;
     }
 
     double angle = get_angle(a, b, c);
-    cout << "Угол напротив первой стороны: " << angle << " градусов" << endl;
+    cout << "РЈРіРѕР» РЅР°РїСЂРѕС‚РёРІ РїРµСЂРІРѕР№ СЃС‚РѕСЂРѕРЅС‹: " << angle << " РіСЂР°РґСѓСЃРѕРІ" << endl;
 
 
     return 0;
